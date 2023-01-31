@@ -1,90 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="1" total="2" passed="0">
+<testng-results skipped="0" failed="0" ignored="1" total="2" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="9325" started-at="2023-01-30T13:13:38 IST" finished-at="2023-01-30T13:13:47 IST">
+  <suite name="Default suite" duration-ms="29334" started-at="2023-01-31T16:13:51 IST" finished-at="2023-01-31T16:14:21 IST">
     <groups>
+      <group name="Registration">
+        <method signature="TestCase1.Registration()[pri:0, instance:Com.Framework.Selenium.V1.TestCase1@289d1c02]" name="Registration" class="Com.Framework.Selenium.V1.TestCase1"/>
+      </group> <!-- Registration -->
     </groups>
-    <test name="Test1" duration-ms="9325" started-at="2023-01-30T13:13:38 IST" finished-at="2023-01-30T13:13:47 IST">
+    <test name="Default test" duration-ms="29334" started-at="2023-01-31T16:13:51 IST" finished-at="2023-01-31T16:14:21 IST">
       <class name="Com.Framework.Selenium.V1.TestCase1">
-        <test-method status="PASS" signature="setupDriver()[pri:0, instance:Com.Framework.Selenium.V1.TestCase1@7403c468]" name="setupDriver" is-config="true" duration-ms="7729" started-at="2023-01-30T13:13:38 IST" finished-at="2023-01-30T13:13:46 IST">
+        <test-method status="PASS" signature="setupDriver()[pri:0, instance:Com.Framework.Selenium.V1.TestCase1@289d1c02]" name="setupDriver" is-config="true" duration-ms="8200" started-at="2023-01-31T16:13:51 IST" finished-at="2023-01-31T16:14:00 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupDriver -->
-        <test-method status="FAIL" signature="logintoapplication()[pri:0, instance:Com.Framework.Selenium.V1.TestCase1@7403c468]" name="logintoapplication" duration-ms="1561" started-at="2023-01-30T13:13:46 IST" finished-at="2023-01-30T13:13:47 IST">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="page-36"]/div/div[1]/div/p[1]"}
-  (Session info: chrome=109.0.5414.120)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.7.1', revision: 'c6795baf1a3'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_341'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [27f0ff200ea469ec0037a5943a005809, findElement {using=xpath, value=//*[@id="page-36"]/div/div[1]/div/p[1]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.120, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\JagritiS\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51445}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51445/devtoo..., se:cdpVersion: 109.0.5414.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 27f0ff200ea469ec0037a5943a005809]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="page-36"]/div/div[1]/div/p[1]"}
-  (Session info: chrome=109.0.5414.120)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.7.1', revision: 'c6795baf1a3'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_341'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [27f0ff200ea469ec0037a5943a005809, findElement {using=xpath, value=//*[@id="page-36"]/div/div[1]/div/p[1]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.120, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\JagritiS\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51445}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51445/devtoo..., se:cdpVersion: 109.0.5414.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 27f0ff200ea469ec0037a5943a005809
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-at java.lang.reflect.Constructor.newInstance(Unknown Source)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:551)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
-at Com.Framework.Selenium.V1.TestCase1.logintoapplication(TestCase1.java:49)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.util.ArrayList.forEach(Unknown Source)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+        <test-method status="PASS" signature="Registration()[pri:0, instance:Com.Framework.Selenium.V1.TestCase1@289d1c02]" name="Registration" duration-ms="21057" started-at="2023-01-31T16:14:00 IST" finished-at="2023-01-31T16:14:21 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- logintoapplication -->
+        </test-method> <!-- Registration -->
       </class> <!-- Com.Framework.Selenium.V1.TestCase1 -->
-    </test> <!-- Test1 -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

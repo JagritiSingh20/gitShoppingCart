@@ -10,7 +10,7 @@ import dev.failsafe.internal.util.Assert;
 
 public class TestCase1 extends BaseTest {
 
-	public static String Username = "xytiiu.spmit@gmail.com";
+	public static String Username = "xytiut.spmit@gmail.com";
 	public static String Password = "7200$inNH";
 	// WebDriver driver;
 	LoginToApp logintoapp;

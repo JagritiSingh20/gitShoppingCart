@@ -33,30 +33,17 @@ public class LoginToApp {
 	WebElement LoginPassword;
 	@FindBy(xpath = "//*[@id=\"customer_login\"]/div[1]/form/p[3]/input[3]")
 	WebElement Logintopage;
-	/*
-	 * @FindBy(xpath = "//*[text()='Shop']") WebElement ShopProduct;
-	 * 
-	 * @FindBy(xpath = "//*[@id=\"content\"]/ul/li[4]/a[1]/img") WebElement
-	 * selectproduct;
-	 */
-	// @FindBy(xpath = "//*[@id=\"customer_login\"]/div[2]/form/p[2]/div")
-	// WebElement message;
-
-	/*
-	 * public void goTO() {
-	 * driver.get("https://redoc-integration.nhsinc.com/#/patientsPayments"); // URL
-	 * driver.manage().window().maximize();
-	 */
-	/* } */
+	@FindBy(xpath = "//a[text()= 'Sign out']")
+	WebElement logout;
 
 	public void Register(String Username, String Password) throws InterruptedException {
 		email.sendKeys(Username);
-		password.sendKeys(Password);
-//		for(String s : Password.split(""))
-//		{
-//			Thread.sleep(1000);
-//			password.sendKeys(s);
-//		}
+		//password.sendKeys(Password);
+		
+		  for (String s : Password.split(""))
+		  { Thread.sleep(1000);
+		  password.sendKeys(s); }
+		 
 		Thread.sleep(10000);
 		submit.click();
 
@@ -67,18 +54,6 @@ public class LoginToApp {
 		LoginPassword.sendKeys(Password);
 		Logintopage.click();
 	}
-
-	/*
-	 * public void Shop() {
-	 * 
-	 * ShopProduct.click(); }
-	 * 
-	 * public void AddtoBasket() {
-	 * 
-	 * selectproduct.click();
-	 * 
-	 * }
-	 */
 
 	public WebElement Enter(By by, String text) {
 		WebElement element = driver.findElement(by);
@@ -93,21 +68,15 @@ public class LoginToApp {
 
 	}
 
-	// public void verifymessage() {
-	// message.getText();
-	// }
-	/*
-	 * public void waitforelement() {
-	 * 
-	 * @SuppressWarnings("deprecation") WebDriverWait wait = new
-	 * WebDriverWait(driver, 1000); wait.until(ExpectedConditions
-	 * .presenceOfElementLocated(By.xpath(
-	 * "//*[@id=\"customer_login\"]/div[2]/form/p[3]/input[3]"))); WebElement submit
-	 * = wait.until(ExpectedConditions.elementToBeClickable(
-	 * driver.findElement(By.xpath(
-	 * "//*[@id=\"customer_login\"]/div[2]/form/p[3]/input[3]")))); try {
-	 * submit.click(); } catch (Exception e) {
-	 * driver.navigate().to("https://practice.automationtesting.in/my-account/"); }
-	 * }
-	 */
+	public String verifywelcometext() {
+		String Accountholdername = TestCase1.Username.substring(0, TestCase1.Username.indexOf('@'));
+		// TODO Auto-generated method stub
+		return "Hello " + Accountholdername + " (not " + Accountholdername + "? Sign out)";
+	}
+
+	public void logoutfromapplication() {
+		// WebElement element = driver.findElement(by);
+		logout.click();
+
+	}
 }

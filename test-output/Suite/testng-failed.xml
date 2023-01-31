@@ -3,14 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
   <test thread-count="5" name="Test1(failed)">
     <classes>
-      <class name="Com.Framework.Selenium.V1.TestCases">
+      <class name="Com.Framework.Selenium.V1.TestCase1">
         <methods>
-          <include name="quitdriver"/>
-          <include name="addItem"/>
+          <include name="logintoapplication"/>
           <include name="setupDriver"/>
-          <include name="Addtocart"/>
         </methods>
-      </class> <!-- Com.Framework.Selenium.V1.TestCases -->
+      </class> <!-- Com.Framework.Selenium.V1.TestCase1 -->
     </classes>
   </test> <!-- Test1(failed) -->
 </suite> <!-- Failed suite [Suite] -->

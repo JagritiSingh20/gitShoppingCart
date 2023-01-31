@@ -1,39 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="3" total="4" passed="0">
+<testng-results skipped="0" failed="1" ignored="1" total="2" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="16216" started-at="2023-01-20T15:28:16 IST" finished-at="2023-01-20T15:28:32 IST">
+  <suite name="Suite" duration-ms="9325" started-at="2023-01-30T13:13:38 IST" finished-at="2023-01-30T13:13:47 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="16216" started-at="2023-01-20T15:28:16 IST" finished-at="2023-01-20T15:28:32 IST">
-      <class name="Com.Framework.Selenium.V1.TestCases">
-        <test-method status="PASS" signature="setupDriver()[pri:0, instance:Com.Framework.Selenium.V1.TestCases@23fe1d71]" name="setupDriver" is-config="true" duration-ms="9209" started-at="2023-01-20T15:28:16 IST" finished-at="2023-01-20T15:28:25 IST">
+    <test name="Test1" duration-ms="9325" started-at="2023-01-30T13:13:38 IST" finished-at="2023-01-30T13:13:47 IST">
+      <class name="Com.Framework.Selenium.V1.TestCase1">
+        <test-method status="PASS" signature="setupDriver()[pri:0, instance:Com.Framework.Selenium.V1.TestCase1@7403c468]" name="setupDriver" is-config="true" duration-ms="7729" started-at="2023-01-30T13:13:38 IST" finished-at="2023-01-30T13:13:46 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupDriver -->
-        <test-method status="FAIL" signature="Addtocart()[pri:0, instance:Com.Framework.Selenium.V1.TestCases@23fe1d71]" name="Addtocart" duration-ms="6963" started-at="2023-01-20T15:28:25 IST" finished-at="2023-01-20T15:28:32 IST">
-          <exception class="org.openqa.selenium.NoSuchWindowException">
+        <test-method status="FAIL" signature="logintoapplication()[pri:0, instance:Com.Framework.Selenium.V1.TestCase1@7403c468]" name="logintoapplication" duration-ms="1561" started-at="2023-01-30T13:13:46 IST" finished-at="2023-01-30T13:13:47 IST">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=109.0.5414.75)
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="page-36"]/div/div[1]/div/p[1]"}
+  (Session info: chrome=109.0.5414.120)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: '4.7.1', revision: 'c6795baf1a3'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_341'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [174ea86f8437a95465fa22912c711beb, findElement {using=xpath, value=//img[@src='https://practice.automationtesting.in/wp-content/uploads/2017/01/HTML5-Web-Application-Development-Beginners-guide-300x300.jpg']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.75, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\JagritiS\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:60343}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60343/devtoo..., se:cdpVersion: 109.0.5414.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 174ea86f8437a95465fa22912c711beb]]>
+Command: [27f0ff200ea469ec0037a5943a005809, findElement {using=xpath, value=//*[@id="page-36"]/div/div[1]/div/p[1]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.120, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\JagritiS\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51445}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51445/devtoo..., se:cdpVersion: 109.0.5414.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 27f0ff200ea469ec0037a5943a005809]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=109.0.5414.75)
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="page-36"]/div/div[1]/div/p[1]"}
+  (Session info: chrome=109.0.5414.120)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: '4.7.1', revision: 'c6795baf1a3'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_341'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [174ea86f8437a95465fa22912c711beb, findElement {using=xpath, value=//img[@src='https://practice.automationtesting.in/wp-content/uploads/2017/01/HTML5-Web-Application-Development-Beginners-guide-300x300.jpg']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.75, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\JagritiS\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:60343}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60343/devtoo..., se:cdpVersion: 109.0.5414.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 174ea86f8437a95465fa22912c711beb
+Command: [27f0ff200ea469ec0037a5943a005809, findElement {using=xpath, value=//*[@id="page-36"]/div/div[1]/div/p[1]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.120, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\JagritiS\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51445}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51445/devtoo..., se:cdpVersion: 109.0.5414.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 27f0ff200ea469ec0037a5943a005809
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -49,11 +49,7 @@ at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(Elemen
 at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-at com.sun.proxy.$Proxy11.click(Unknown Source)
-at Com.Framework.Selenium.V1.AddToCart.addtoBasket(AddToCart.java:48)
-at Com.Framework.Selenium.V1.TestCases.Addtocart(TestCases.java:55)
+at Com.Framework.Selenium.V1.TestCase1.logintoapplication(TestCase1.java:49)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -84,15 +80,11 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Addtocart -->
-        <test-method status="PASS" signature="quitdriver()[pri:0, instance:Com.Framework.Selenium.V1.TestCases@23fe1d71]" name="quitdriver" is-config="true" duration-ms="0" started-at="2023-01-20T15:28:32 IST" finished-at="2023-01-20T15:28:32 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quitdriver -->
-      </class> <!-- Com.Framework.Selenium.V1.TestCases -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- logintoapplication -->
+      </class> <!-- Com.Framework.Selenium.V1.TestCase1 -->
+    </test> <!-- Test1 -->
+  </suite> <!-- Suite -->
 </testng-results>

@@ -3,13 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Com.Framework.Selenium.V1.TestCases">
+      <class name="Com.Framework.Selenium.V1.TestCase1">
         <methods>
-          <include name="quitdriver"/>
           <include name="setupDriver"/>
-          <include name="Addtocart"/>
+          <include name="Registration"/>
         </methods>
-      </class> <!-- Com.Framework.Selenium.V1.TestCases -->
+      </class> <!-- Com.Framework.Selenium.V1.TestCase1 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
-  <test thread-count="5" name="Test1(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
       <class name="Com.Framework.Selenium.V1.TestCase1">
         <methods>
-          <include name="logintoapplication"/>
+          <include name="screenShot"/>
           <include name="setupDriver"/>
+          <include name="RegistrationIDalreadyexist"/>
         </methods>
       </class> <!-- Com.Framework.Selenium.V1.TestCase1 -->
     </classes>
-  </test> <!-- Test1(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

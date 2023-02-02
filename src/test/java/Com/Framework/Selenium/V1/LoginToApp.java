@@ -44,7 +44,7 @@ public class LoginToApp {
 		  { Thread.sleep(1000);
 		  password.sendKeys(s); }
 		 
-		Thread.sleep(10000);
+		/* Thread.sleep(10000); */
 		submit.click();
 
 	}

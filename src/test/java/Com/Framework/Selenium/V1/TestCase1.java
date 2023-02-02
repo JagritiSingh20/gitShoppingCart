@@ -2,8 +2,15 @@ package Com.Framework.Selenium.V1;
 
 import static org.testng.Assert.assertEquals;
 
+import java.io.File;
+import java.io.IOException;
+
+import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebElement;
+import org.testng.ITestResult;
 import org.testng.annotations.Test;
 
 import dev.failsafe.internal.util.Assert;
@@ -22,14 +29,24 @@ public class TestCase1 extends BaseTest {
 		logintoapp = new LoginToApp(driver);
 		logintoapp.Register(Username, Password);
 		// verify welcome message after clicking on registration
-		try {
 
+		String message = driver.findElement(By.xpath("//*[@id=\"page-36\"]/div/div[1]/div/p[1]")).getText();
+		assertEquals(message, logintoapp.verifywelcometext());
+		System.out.println("Welcome message is: " + message);
+		logintoapp.logoutfromapplication();
+		logintoapp.Login(Username, Password);
+
+	}
+
+	@Test (groups = { "Registration" , "RegistrationIDalreadyexist" })
+	public void RegistrationIDalreadyexist() throws InterruptedException {
+		try {
+			logintoapp = new LoginToApp(driver);
+			logintoapp.Register(Username, Password);
+			// verify welcome message after clicking on registration
 			String message = driver.findElement(By.xpath("//*[@id=\"page-36\"]/div/div[1]/div/p[1]")).getText();
 			assertEquals(message, logintoapp.verifywelcometext());
 			System.out.println("Welcome message is: " + message);
-			logintoapp.logoutfromapplication();
-			logintoapp.Login(Username, Password);
-		} catch (Exception e) {
 			// verify error message if user try to register with existing ID
 			String expectedmessage = "Error: An account is already registered with your email address. Please login.";
 			// identify actual error message
@@ -37,9 +54,11 @@ public class TestCase1 extends BaseTest {
 			String actualmessage = errormessage.getText();
 			System.out.println("Error message is: " + actualmessage);
 			// verify error message with Assertion
-			assertEquals(expectedmessage, actualmessage);
+			assertEquals(expectedmessage, actualmessage);			
 		}
-
+		catch(Exception e) {
+			logintoapp.Register(Username, Password);
+		}
 	}
 
 	@Test
@@ -73,14 +92,4 @@ public class TestCase1 extends BaseTest {
 	 * addtocart.additemcount(); // addtocart.additemcount();
 	 */
 
-	/*
-	 * @SuppressWarnings("unused") public String getScreenshot(String testCaseName)
-	 * throws IOException { TakesScreenshot ts = (TakesScreenshot) driver; File
-	 * source = ts.getScreenshotAs(OutputType.FILE); File file = new
-	 * File("Local Path"); FileUtils.copyFile(source, new
-	 * File("C:\\Users\\JagritiS\\OneDrive - CitiusTech\\Documents\\Self Study\\Reports/Screenshot.png"
-	 * )); return System.getProperty(
-	 * "C:\\Users\\JagritiS\\OneDrive - CitiusTech\\Documents\\Self Study\\Reports/Screenshot.png"
-	 * );
-	 */
-}/* } */
+}

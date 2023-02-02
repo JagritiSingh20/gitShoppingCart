@@ -5,8 +5,9 @@
     <classes>
       <class name="Com.Framework.Selenium.V1.TestCase1">
         <methods>
+          <include name="screenShot"/>
           <include name="setupDriver"/>
-          <include name="Registration"/>
+          <include name="RegistrationIDalreadyexist"/>
         </methods>
       </class> <!-- Com.Framework.Selenium.V1.TestCase1 -->
     </classes>
